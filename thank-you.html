@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order confirmed — LATAFFA</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="wordmark">LATAFFA</a>
+      <span class="header-note">Perfume distributor in Nigeria</span>
+    </div>
+  </header>
+
+  <section class="thanks">
+    <div class="wrap">
+      <div class="thanks-inner">
+        <div class="thanks-mark" aria-hidden="true">&#10003;</div>
+        <h1>Order received.</h1>
+        <p>Thank you<span id="thanks-name">,</span> your order <span class="order-id" id="order-id">—</span> has been received. Our team will call to confirm delivery within 24 hours.</p>
+        <p>A copy of your order details has been sent to our fulfilment desk — keep your phone reachable for the delivery call.</p>
+
+        <div class="thanks-summary" id="thanks-summary">
+          <!-- filled in by js/thank-you.js, which also fires the PURCHASE pixel event -->
+        </div>
+
+        <p style="margin-top: 32px;"><a href="index.html" class="btn btn-ghost">Continue shopping</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>LATAFFA — perfume distributor in Nigeria.</span>
+      <span>&copy; <span id="year"></span> LATAFFA. Demo storefront for training purposes.</span>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/snap-pixel.js"></script>
+  <script src="js/thank-you.js"></script>
+</body>
+</html>

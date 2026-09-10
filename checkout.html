@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — LATAFFA</title>
+  <meta name="description" content="Complete your LATAFFA perfume order." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="wordmark">LATAFFA</a>
+      <span class="header-note">Perfume distributor in Nigeria</span>
+    </div>
+  </header>
+
+  <section class="checkout">
+    <div class="wrap">
+      <a href="index.html" class="back-link">&larr; Back to collection</a>
+      <div class="checkout-grid">
+        <div>
+          <h1>Your details</h1>
+          <form id="checkout-form" novalidate>
+            <div class="field">
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" name="fullName" placeholder="e.g. Amaka Obi" autocomplete="name" required />
+              <p class="field-error">Enter your full name.</p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="080X XXX XXXX" autocomplete="tel" required />
+                <p class="field-error">Enter a valid phone number.</p>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+                <p class="field-error">Enter a valid email address.</p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="address">Delivery address</label>
+              <textarea id="address" name="address" rows="3" placeholder="Street, city, state" required></textarea>
+              <p class="field-error">Enter your delivery address.</p>
+            </div>
+            <div class="field">
+              <label for="state">State</label>
+              <select id="state" name="state" required>
+                <option value="" disabled selected>Select your state</option>
+                <option>Lagos</option>
+                <option>Edo</option>
+                <option>Abuja (FCT)</option>
+                <option>Rivers</option>
+                <option>Oyo</option>
+                <option>Kano</option>
+                <option>Other</option>
+              </select>
+              <p class="field-error">Select a state.</p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Place order</button>
+          </form>
+        </div>
+
+        <aside class="order-summary" id="order-summary">
+          <!-- filled in by js/checkout.js based on ?product= in the URL -->
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>LATAFFA — perfume distributor in Nigeria.</span>
+      <span>&copy; <span id="year"></span> LATAFFA. Demo storefront for training purposes.</span>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/snap-pixel.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
