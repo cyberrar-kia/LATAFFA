@@ -13,14 +13,14 @@ const PRODUCTS = [
     name: "Lattafa Dynasty EDP 100ml",
     note: "A crowned crystal flacon holding a bold, fruity-woody eau de parfum — juicy top notes over a warm, regal base.",
     price: 32000,
-    image: "data:image/jpeg;base64,PLACEHOLDER_DYNASTY_IMAGE",
+    image: "REPLACE_DYNASTY",
   },
   {
     id: "2",
     name: "Lattafa Khamrah Qahwa",
     note: "Rich Arabic coffee and cardamom wrapped in amber, spice and a gourmand sweetness.",
     price: 35000,
-    image: "data:image/webp;base64,PLACEHOLDER_KHAMRAH_IMAGE",
+    image: "REPLACE_KHAMRAH",
   },
 ];
 
