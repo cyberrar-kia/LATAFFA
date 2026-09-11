@@ -33,13 +33,13 @@ PRODUCTS.forEach(function (product) {
   trackSnapEvent("VIEW_CONTENT", product);
 });
 
-// Fire ADD_CART the moment someone clicks through to checkout for a product,
-// before the navigation happens.
+// Fire START_CHECKOUT ("Initiate Checkout") the moment someone clicks
+// "Buy now", before the navigation to checkout.html happens.
 grid.addEventListener("click", function (event) {
   const link = event.target.closest("[data-product-id]");
   if (!link) return;
   const product = getProductById(link.dataset.productId);
   if (product) {
-    trackSnapEvent("ADD_CART", product);
+    trackSnapEvent("START_CHECKOUT", product);
   }
 });

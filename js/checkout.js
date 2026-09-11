@@ -38,7 +38,6 @@ function renderSummary() {
 }
 
 renderSummary();
-trackSnapEvent("START_CHECKOUT", product);
 
 // ---- form validation + submit ----
 

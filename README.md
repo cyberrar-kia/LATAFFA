@@ -21,12 +21,11 @@ js/thank-you.js      renders confirmation, tracks PURCHASE
 
 ## Before going live
 
-1. **Add the real products.** Open `js/products.js` and replace the `name`,
-   `note`, `price`, and `image` for each of the two products. Drop product
-   photos in `/images` and point `image` at them (e.g. `images/product-1.jpg`).
-2. **Set the Snap Pixel ID.** Open `js/snap-pixel.js` and replace
-   `YOUR_SNAP_PIXEL_ID` with the real Pixel ID from Snapchat Ads Manager →
-   Events Manager.
+1. **Products are live** — `js/products.js` has the two real Lattafa products
+   (Dynasty EDP 100ml, Khamrah Qahwa) with images embedded as data URIs.
+   Edit names, notes, or prices there any time.
+2. **Snap Pixel ID is set** — `js/snap-pixel.js` is initialized with the real
+   pixel ID from Snapchat Ads Manager.
 3. **Set delivery fee / pricing** if needed — `DELIVERY_FEE` is at the top
    of `js/checkout.js`.
 
@@ -36,8 +35,7 @@ js/thank-you.js      renders confirmation, tracks PURCHASE
 |---|---|---|
 | Every page | `PAGE_VIEW` | on load |
 | `index.html` | `VIEW_CONTENT` | per product card rendered |
-| `index.html` → checkout | `ADD_CART` | on "Buy now" click |
-| `checkout.html` | `START_CHECKOUT` | on page load |
+| `index.html` → checkout | `START_CHECKOUT` | on "Buy now" click (Initiate Checkout) |
 | `thank-you.html` | `PURCHASE` | on load, only if a real order exists in the session |
 
 `PURCHASE` deliberately will not fire if someone lands on `thank-you.html`

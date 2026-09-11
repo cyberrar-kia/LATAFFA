@@ -1,16 +1,13 @@
 /* ==========================================================================
    LATAFFA — Snap Pixel
    ------------------------------------------------------------------------
-   1. Replace YOUR_SNAP_PIXEL_ID below with the real Pixel ID from
-      Snapchat Ads Manager → Events Manager → your pixel → Setup.
-   2. This file is loaded on every page (see the <script> tag near the
-      bottom of each .html file), so PAGE_VIEW fires everywhere and the
-      snaptr() helper is available for the funnel events below:
-        - index.html      → PAGE_VIEW (automatic) + VIEW_CONTENT per product
-        - "Buy now" click  → ADD_CART
-        - checkout.html   → START_CHECKOUT
-        - thank-you.html  → PURCHASE  (this is the conversion event you
-                              optimize the ad campaign toward)
+   Pixel ID is live. This file is loaded on every page (see the <script>
+   tag near the bottom of each .html file), so PAGE_VIEW fires everywhere
+   and the snaptr() helper is available for the funnel events below:
+     - index.html      → PAGE_VIEW (automatic) + VIEW_CONTENT per product
+     - "Buy now" click  → START_CHECKOUT ("Initiate Checkout")
+     - thank-you.html  → PURCHASE  (this is the conversion event you
+                          optimize the ad campaign toward)
    ========================================================================== */
 
 (function (e, t, n) {
@@ -27,7 +24,7 @@
   u.parentNode.insertBefore(r, u);
 })(window, document, "https://sc-static.net/scevent.min.js");
 
-snaptr("init", "YOUR_SNAP_PIXEL_ID");
+snaptr("init", "9efd3874-e2a9-431e-ab76-79418bb335cc");
 snaptr("track", "PAGE_VIEW");
 
 /**
