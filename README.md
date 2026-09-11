@@ -14,16 +14,16 @@ thank-you.html     order confirmation, fires the PURCHASE pixel event
 css/style.css       all styling
 js/products.js      product data — EDIT THIS to swap in real products
 js/snap-pixel.js    Snap Pixel base code + event helper — set your Pixel ID here
-js/main.js          renders the product grid, tracks VIEW_CONTENT / ADD_CART
-js/checkout.js       renders order summary, validates the form, tracks START_CHECKOUT
+js/main.js          renders the product grid, tracks VIEW_CONTENT / START_CHECKOUT
+js/checkout.js       renders order summary, validates the form
 js/thank-you.js      renders confirmation, tracks PURCHASE
 ```
 
 ## Before going live
 
 1. **Products are live** — `js/products.js` has the two real Lattafa products
-   (Dynasty EDP 100ml, Khamrah Qahwa) with images embedded as data URIs.
-   Edit names, notes, or prices there any time.
+   (Dynasty EDP 100ml, Khamrah Qahwa). Images are noted as data URIs there —
+   see below for the image note.
 2. **Snap Pixel ID is set** — `js/snap-pixel.js` is initialized with the real
    pixel ID from Snapchat Ads Manager.
 3. **Set delivery fee / pricing** if needed — `DELIVERY_FEE` is at the top

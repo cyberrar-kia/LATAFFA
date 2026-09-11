@@ -1,26 +1,26 @@
 /* ==========================================================================
    LATAFFA — product data
-   This is the ONLY file you need to edit to swap in the real products.
-   For each product:
-     - image: path to the product photo (drop files in /images and point here)
-     - name / note / price: shown on the listing, checkout and order summary
+   Images are embedded as base64 data URIs so the storefront has zero
+   dependency on external image hosting — swap PRODUCTS below to update
+   names, notes, prices, or images (replace the "image" data URI, or point
+   it at a file in /images instead).
    Prices are in NGN, stored as plain numbers (no commas/symbols).
    ========================================================================== */
 
 const PRODUCTS = [
   {
     id: "1",
-    name: "LATAFFA — Product 1",
-    note: "Replace this with the real product name and a one-line description.",
-    price: 18500,
-    image: "https://placehold.co/640x800/1c1610/b9924f?text=LATAFFA%0AProduct+1",
+    name: "Lattafa Dynasty EDP 100ml",
+    note: "A crowned crystal flacon holding a bold, fruity-woody eau de parfum — juicy top notes over a warm, regal base.",
+    price: 32000,
+    image: "data:image/jpeg;base64,PLACEHOLDER_DYNASTY_IMAGE",
   },
   {
     id: "2",
-    name: "LATAFFA — Product 2",
-    note: "Replace this with the real product name and a one-line description.",
-    price: 21000,
-    image: "https://placehold.co/640x800/1c1610/b9924f?text=LATAFFA%0AProduct+2",
+    name: "Lattafa Khamrah Qahwa",
+    note: "Rich Arabic coffee and cardamom wrapped in amber, spice and a gourmand sweetness.",
+    price: 35000,
+    image: "data:image/webp;base64,PLACEHOLDER_KHAMRAH_IMAGE",
   },
 ];
 
